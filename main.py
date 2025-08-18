@@ -11,7 +11,7 @@ load_dotenv()
 
 # ---- Config ----
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
-TOTAL_DOCS = int(os.getenv("TOTAL_DOCS", 1_000_000))
+TOTAL_DOCS = int(os.getenv("TOTAL_DOCS", 10_000_000))
 BATCH_SIZE = int(os.getenv("BATCH_SIZE", 1000))
 INDEX_NAME = os.getenv("INDEX_NAME", "idx:merchant")
 KEY_PREFIX = os.getenv("KEY_PREFIX", "merchant:")
