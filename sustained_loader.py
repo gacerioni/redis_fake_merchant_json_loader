@@ -10,7 +10,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ---- Config ----
-REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:5566")
+#REDIS_URL = os.getenv("REDIS_URL", "rediss://default:Oqu2qhjEVr9EOXqEBf3mzWbq78JQNsZD@redis-19585.c44444.us-east-1-mz.ec2.cloud.rlrcp.com:19585")
+REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
 KEY_PREFIX = os.getenv("KEY_PREFIX", "merchant:")
 COUNTER_KEY = os.getenv("COUNTER_KEY", "merchant:id")  # shared with probe.py
 TARGET_RPS = float(os.getenv("TARGET_RPS", "2500"))    # aim for ~2k ops/sec

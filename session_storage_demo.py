@@ -10,7 +10,7 @@ load_dotenv()
 
 # ---- Config ----
 #REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
-REDIS_URL = "redis://localhost:5566"
+REDIS_URL = "rediss://default:Oqu2qhjEVr9EOXqEBf3mzWbq78JQNsZD@redis-19585.c44444.us-east-1-mz.ec2.cloud.rlrcp.com:19585"
 TOTAL_SESSIONS = int(os.getenv("TOTAL_SESSIONS", 1000))
 BATCH_SIZE = int(os.getenv("BATCH_SIZE", 1000))
 KEY_PREFIX = os.getenv("KEY_PREFIX", "session:")
